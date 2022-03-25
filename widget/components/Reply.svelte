@@ -63,7 +63,7 @@
       <label class="mb-2 block dark:text-gray-200" for="nickname">{t('nickname')}</label>
       <input
         name="nickname"
-        class="w-full p-2 border border-gray-200 bg-transparent dark:text-gray-100 dark:outline-none"
+        class="w-full p-2 border border-gray-200/50 bg-transparent dark:text-gray-100 dark:outline-none dark:border-gray-600/50"
         type="text"
         bind:value={nickname}
       />
@@ -72,7 +72,7 @@
       <label class="mb-2 block dark:text-gray-200" for="email">{t('email')}</label>
       <input
         name="email"
-        class="w-full p-2 border border-gray-200 bg-transparent  dark:text-gray-100 dark:outline-none"
+        class="w-full p-2 border border-gray-200/50 bg-transparent dark:text-gray-100 dark:outline-none dark:border-gray-600/50"
         type="email"
         bind:value={email}
       />
@@ -83,7 +83,7 @@
     <label class="mb-2 block dark:text-gray-200" for="reply_content">{t('reply_placeholder')}</label>
     <textarea
       name="reply_content"
-      class="w-full p-2 border border-gray-200 h-24 bg-transparent dark:text-gray-100 dark:outline-none"
+      class="w-full p-2 border border-gray-200/50 h-24 bg-transparent dark:text-gray-100 dark:outline-none dark:border-gray-600/50"
       bind:value={content}
     />
   </div>

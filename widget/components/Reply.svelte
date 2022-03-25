@@ -88,13 +88,15 @@
     />
   </div>
 
-  <div class="px-1">
+  <div class="px-1 flex items-center justify-between">
     <button
-
       class="text-sm bg-gray-200 p-2 px-4 font-bold"
       class:cusdis-disabled={loading}
       on:click={addComment}>{loading ? t('sending') : t('post_comment')}</button
     >
+    <div class="text-center text-gray-500 dark:text-gray-100 text-xs">
+      <a class="underline " href="https://cusdis.com">{t('powered_by')}</a>
+    </div>
   </div>
 </div>
 

@@ -16,7 +16,7 @@
   class:pl-4={isChild}
   class:border-l-2={isChild}
   class:border-color-gray-200={isChild}
-  class:dark\:border-gray-500={isChild}
+  class:dark:border-gray-500={isChild}
   class:cusdis-indicator={showIndicator}
 >
   <div class="flex items-center">
@@ -47,7 +47,7 @@
 
   <div>
     <button
-      class="font-medium text-sm text-gray-500 dark:bg-transparent dark:text-gray-400 hover:text-red-500 hover:border-b-red-500 dark:hover:text-red-300 dark:hover:border-b-red-300"
+      class="font-medium text-sm text-gray-500 dark:bg-transparent dark:text-gray-400 hover:text-red-500 dark:hover:text-red-300"
       type="button"
       on:click={(_) => {
         showReplyForm = !showReplyForm

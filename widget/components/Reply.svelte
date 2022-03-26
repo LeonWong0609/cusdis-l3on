@@ -90,11 +90,11 @@
 
   <div class="px-1 flex items-center justify-between">
     <button
-      class="text-sm bg-gray-200 p-2 px-4 font-bold"
+      class="text-sm font-bold p-2 px-4 bg-gray-200 "
       class:cusdis-disabled={loading}
       on:click={addComment}>{loading ? t('sending') : t('post_comment')}</button
     >
-    <div class="text-center text-gray-500 dark:text-gray-100 text-xs">
+    <div class="text-gray-500 dark:text-gray-400 text-xs hover:text-red-500 dark:hover:text-red-300">
       <a class="underline " href="https://cusdis.com">{t('powered_by')}</a>
     </div>
   </div>

@@ -90,7 +90,7 @@
 
   <div class="px-1 flex items-center justify-between">
     <button
-      class="rounded text-sm text-gray-700 font-bold p-2 px-4 bg-gray-200 dark:text-gray-200 dark:outline-1 dark:outline-gray-600/50 dark:bg-[#191919]"
+      class="rounded text-sm text-gray-700 font-bold p-2 px-4 bg-gray-200 dark:text-gray-200 dark:!border-gray-600/50 dark:bg-[#191919]"
       class:cusdis-disabled={loading}
       on:click={addComment}>{loading ? t('sending') : t('post_comment')}</button
     >

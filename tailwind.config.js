@@ -5,6 +5,11 @@ module.exports = {
         'widget/components/Reply.svelte',
         'widget/theme.css',
     ],
+    safelist: [
+        'dark:!border-gray-600/50',
+        'dark:bg-[#191919]',
+        'border-gray-200/50',
+    ],
     theme: {
         extend: {},
     },

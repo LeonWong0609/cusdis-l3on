@@ -63,7 +63,7 @@
       <label class="mb-2 block dark:text-gray-200" for="nickname">{t('nickname')}</label>
       <input
         name="nickname"
-        class="w-full p-2 border border-gray-200/50 bg-transparent dark:text-gray-100 dark:outline-none dark:border-gray-600/50"
+        class="rounded w-full p-2 bg-transparent text-gray-700 dark:text-gray-200 border border-gray-200/50 dark:border-0 dark:outline-1 dark:outline-gray-600/50"
         type="text"
         bind:value={nickname}
       />
@@ -72,7 +72,7 @@
       <label class="mb-2 block dark:text-gray-200" for="email">{t('email')}</label>
       <input
         name="email"
-        class="w-full p-2 border border-gray-200/50 bg-transparent dark:text-gray-100 dark:outline-none dark:border-gray-600/50"
+        class="rounded w-full p-2 bg-transparent text-gray-700 dark:text-gray-200 border border-gray-200/50 dark:border-0 dark:outline-1 dark:outline-gray-600/50"
         type="email"
         bind:value={email}
       />
@@ -83,14 +83,14 @@
     <label class="mb-2 block dark:text-gray-200" for="reply_content">{t('reply_placeholder')}</label>
     <textarea
       name="reply_content"
-      class="w-full p-2 border border-gray-200/50 h-24 bg-transparent dark:text-gray-100 dark:outline-none dark:border-gray-600/50"
+      class="rounded w-full p-2 bg-transparent text-gray-700 dark:text-gray-200 border border-gray-200/50 dark:border-0 dark:outline-1 dark:outline-gray-600/50 h-24"
       bind:value={content}
     />
   </div>
 
   <div class="px-1 flex items-center justify-between">
     <button
-      class="text-sm font-bold p-2 px-4 bg-gray-200 "
+      class="rounded text-sm text-gray-700 font-bold p-2 px-4 bg-gray-200 dark:text-gray-200 dark:outline-1 dark:outline-gray-600/50 dark:bg-[#191919]"
       class:cusdis-disabled={loading}
       on:click={addComment}>{loading ? t('sending') : t('post_comment')}</button
     >

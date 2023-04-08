@@ -65,6 +65,7 @@
         name="nickname"
         class="rounded w-full p-2 bg-transparent text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-500"
         type="text"
+        title={t('nickname')}
         bind:value={nickname}
       />
     </div>
@@ -74,6 +75,7 @@
         name="email"
         class="rounded w-full p-2 bg-transparent text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-500"
         type="email"
+        title={t('email')}
         bind:value={email}
       />
     </div>
@@ -84,12 +86,14 @@
     <textarea
       name="reply_content"
       class="rounded w-full p-2 bg-transparent text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-500 h-24"
+      title={t('reply_placeholder')}
       bind:value={content}
     />
   </div>
 
   <div class="px-1 flex items-center justify-between">
     <button
+
       class="rounded text-sm text-gray-700 font-bold p-2 px-4 bg-gray-200 dark:text-gray-200 dark:bg-gray-500"
       class:cusdis-disabled={loading}
       on:click={addComment}>{loading ? t('sending') : t('post_comment')}</button
